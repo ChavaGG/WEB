@@ -1,0 +1,84 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduMatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>EduMatch</h1>
+    <nav>
+      <a href="#map">Mapa</a>
+      <a href="#filters">Filtros</a>
+      <a href="#register">Registro</a>
+      <a href="#chat">Chat</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Mapa -->
+    <section id="map">
+      <h2>Escuelas Cercanas</h2>
+      <div id="map-container">Mapa interactivo simulado</div>
+    </section>
+
+    <!-- Filtros -->
+    <section id="filters">
+      <h2>Filtros de Búsqueda</h2>
+      <form>
+        <label>Presupuesto:</label>
+        <input type="number" placeholder="Ej. 5000" />
+        <label>Tipo de ayuda:</label>
+        <select>
+          <option>Infraestructura</option>
+          <option>Becas</option>
+          <option>Útiles</option>
+          <option>Alimentos</option>
+        </select>
+        <label>Nivel educativo:</label>
+        <select>
+          <option>Preescolar</option>
+          <option>Primaria</option>
+          <option>Secundaria</option>
+        </select>
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- Registro -->
+    <section id="register">
+      <h2>Registro</h2>
+      <div class="register-box">
+        <h3>Escuela</h3>
+        <input type="text" placeholder="Nombre de la escuela" />
+        <input type="file" />
+      </div>
+      <div class="register-box">
+        <h3>Donador</h3>
+        <input type="text" placeholder="Nombre del donador" />
+        <input type="text" placeholder="Presupuesto disponible" />
+      </div>
+    </section>
+
+    <!-- Chat Simulado -->
+    <section id="chat">
+      <h2>Chat</h2>
+      <div id="chat-box">
+        <div class="message">Admin: Bienvenido a EduMatch</div>
+      </div>
+      <input type="text" placeholder="Escribe un mensaje..." id="chat-input" />
+      <button onclick="sendMessage()">Enviar</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EduMatch</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
